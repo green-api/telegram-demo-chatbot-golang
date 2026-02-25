@@ -2,7 +2,7 @@
 
 - [Документация на русском](README_RU.md).
 
-An example of a chatbot written in Go using the API service for Whatsapp [green-api.com](https://green-api.com/en/).
+An example of a chatbot written in Go using the API service for Telegram [green-api.com](https://green-api.com/en/).
 The chatbot clearly demonstrates the use of the API to send text messages, files, pictures, locations, contacts.
 
 ## Content
@@ -41,11 +41,11 @@ Download and install the Git version control system appropriate for your operati
 
 Open the project in any IDE.
 
-The environment for launching the chatbot is ready, now you need to configure and launch the chatbot on your Whatsapp account.
+The environment for launching the chatbot is ready, now you need to configure and launch the chatbot on your Telegram account.
 
 ## Launch a chatbot
 
-In order to set up a chatbot on your Whatsapp account, you need to go to the [console](https://console.greenapi.com/) and register. For new users, [instructions](https://greenapi.com/en/docs/before-start/) are provided for setting up an account and obtaining the parameters necessary for the chatbot to work, namely:
+In order to set up a chatbot on your Telegram account, you need to go to the [console](https://console.greenapi.com/) and register. For new users, [instructions](https://greenapi.com/en/docs/before-start/) are provided for setting up an account and obtaining the parameters necessary for the chatbot to work, namely:
 ```
     idInstance
     apiTokenInstance
@@ -111,7 +111,7 @@ All changes must be saved, after which you can launch the chatbot. To launch the
 
 ## Usage
 
-If the previous steps have been completed, then the chatbot should be working on your Whatsapp account. It is important to remember that the user must be authorized in [console](https://console.green-api.com/).
+If the previous steps have been completed, then the chatbot should be working on your Telegram account. It is important to remember that the user must be authorized in [console](https://console.green-api.com/).
 
 Now you can send messages to the chatbot!
 

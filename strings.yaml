@@ -50,11 +50,11 @@ send_video_message:
   es: "Este video se envía mediante el método sendFileByUrl.\n\nSi quieres saber cómo funciona el método, sigue el enlace\n"
   kz: "Бұл видео sendFileByUrl әдісімен жіберілген.\n\nӘдіс жұмысы туралы білу үшін сілтеме бойынша өтіңіз\n"
 send_contact_message:
-  ru: "Следующий контакт будет отправлен методом sendContact. Это Ваш номер!\n\nЧтобы узнать как работает метод, пройдите по ссылке\n"
-  en: "The following contact to be sent via sendContact method. That is your number!\n\nIf you want to know how the method works, follow the link\n"
-  he: "איש הקשר הבא יישלח באמצעות שיטת sendContact. זה אתה!\n\nאם אתה רוצה לדעת איך השיטה עובדת, בצע את הקישור\n"
-  es: "El siguiente contacto se enviará mediante el método sendContact. ¡Ese eres tu!\n\nSi quieres saber cómo funciona el método, sigue el enlace\n"
-  kz: "Келесі контакт sendContact әдісімен жіберіледі. Бұл сіздің номіріңіз!\n\nӘдіс жұмысы туралы білу үшін сілтеме бойынша өтіңіз\n"
+  ru: "Следующий контакт будет отправлен методом sendContact.\n\nЧтобы узнать как работает метод, пройдите по ссылке\n"
+  en: "The following contact to be sent via sendContact method.\n\nIf you want to know how the method works, follow the link\n"
+  he: "איש הקשר הבא יישלח באמצעות שיטת sendContact\n\nאם אתה רוצה לדעת איך השיטה עובדת, בצע את הקישור\n"
+  es: "El siguiente contacto se enviará mediante el método sendContact.\n\nSi quieres saber cómo funciona el método, sigue el enlace\n"
+  kz: "Келесі контакт sendContact әдісімен жіберіледі.\n\nӘдіс жұмысы туралы білу үшін сілтеме бойынша өтіңіз\n"
 send_location_message:
   ru: "Следующая геолокация будет отправлена методом sendLocation.\nЭто координаты острова Мальта!\n\nЧтобы узнать как работает метод, пройдите по ссылке\n"
   en: "The following location to be sent via sendLocation method.\nThese are the coordinates of Malta island!\n\nIf you want to know how the method works, follow the link\n"
@@ -115,6 +115,12 @@ send_group_message_set_picture_false:
   he: "👥 הקבוצה \"קבוצה עם הדגמה צ'אט בוט\" נוצרה על ידי הבוט באמצעות CreateGroup GREEN API - צור שיטת קבוצה וההודעה נשלחה באמצעות sendMessage GREEN API - שיטת שלח טקסט.\n\nכדי ללמוד איך לעבוד עם קבוצה שיטות, עקוב אחר הקישור GREEN API - סקירת קבוצות"
   es: "👥 El grupo “Grupo con bot de chat de demostración” fue creado por el bot utilizando GREEN API CreateGroup. - Cree un método de grupo y el mensaje se envió usando sendMessage GREEN API - Enviar método de texto.\n\nPara aprender a trabajar con métodos de grupo, siga el enlace GREEN API - Descripción general de grupos\n"
   kz: "👥 Топ “Демо чат-ботпен топ” CreateGroup әдісі арқылы құрылды және sendMessage әдісі арқылы хабарлама жіберілді.\n\nТоп әдістерімен жұмыс жасауды үйрену үшін сілтеме бойынша өтіңіз"
+about_go_chatbot:
+  ru: "GOLANG GREEN API чат-бот предназначен для демонстрации возможностей Telegram API.\nКод GREEN API чат-бота открыт, на его основе Вы легко сможете написать своего бота."
+  en: "GOLANG GREEN API chatbot is designed to demonstrate the capabilities of the Telegram API.\nThe code for the GREEN API chatbot is open source, and you can easily write your own bot on its basis."
+  he: "GOLANG GREEN API chatbot is designed to demonstrate the capabilities of the Telegram API.\nThe code for the GREEN API chatbot is open source, and you can easily write your own bot on its basis."
+  es: "GOLANG GREEN API chatbot is designed to demonstrate the capabilities of the Telegram API.\nThe code for the GREEN API chatbot is open source, and you can easily write your own bot on its basis."
+  kz: "GOLANG GREEN API чат-боты Telegram API мүмкіндіктерін көрсетуге арналған.\nGOLANG GREEN API чат-боттың коды ашық, оның негізінде сіз өзіңіздің ботыңызды оңай жаза аласыз."
 link_to_docs:
   ru: "\n\n🔗 Ссылка на документацию\n"
   en: "\n\n🔗 Link to the documentation\n"
