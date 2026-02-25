@@ -7,6 +7,8 @@ import (
 	greenapi "github.com/green-api/telegram-api-client-golang"
 
 	chatbot "github.com/green-api/telegram-chatbot-golang"
+	gptbot "github.com/green-api/telegram-chatgpt-go"
+	"github.com/green-api/telegram-demo-chatbot-golang/registry"
 	"github.com/green-api/telegram-demo-chatbot-golang/scenes"
 	"github.com/joho/godotenv"
 )
@@ -19,12 +21,28 @@ func main() {
 
 	idInstance := os.Getenv("ID_INSTANCE")
 	authToken := os.Getenv("AUTH_TOKEN")
+	openaiToken := os.Getenv("OPENAI_API_KEY")
 
 	if idInstance == "" || authToken == "" {
 		log.Fatal("ID_INSTANCE and AUTH_TOKEN must be set in .env file or environment variables.")
 	}
+	if openaiToken == "" {
+		log.Fatal("OPENAI_API_KEY must be set in .env file or environment variables for GPT functionality.")
+	}
 
 	baseBot := chatbot.NewBot(idInstance, authToken)
+
+	gptConfig := gptbot.GPTBotConfig{
+		IDInstance:       idInstance,
+		APITokenInstance: authToken,
+		OpenAIApiKey:     openaiToken,
+		Model:            gptbot.ModelGPT4o,
+		MaxHistoryLength: 10,
+		SystemMessage:    "You are a helpful Telegram assistant.",
+	}
+	gptHelper := gptbot.NewTelegramGptBot(gptConfig)
+
+	registry.RegisterGptHelper(gptHelper)
 
 	go func() {
 		for err := range baseBot.ErrorChannel {

@@ -9,6 +9,7 @@ import (
 
 	greenapi "github.com/green-api/telegram-api-client-golang"
 	chatbot "github.com/green-api/telegram-chatbot-golang"
+	"github.com/green-api/telegram-demo-chatbot-golang/registry"
 	"github.com/green-api/telegram-demo-chatbot-golang/util"
 )
 
@@ -128,6 +129,21 @@ func (s EndpointsScene) Start(bot *chatbot.Bot) {
 						util.GetString([]string{"link_to_youtube", lang})+
 						util.GetString([]string{"links", lang, "youtube_channel"}))
 				return
+			case "11":
+				gptHelper := registry.GetGptHelper()
+				if gptHelper == nil {
+					log.Println("Error: gptHelperBot is nil when trying to start GPT scene")
+					time.Sleep(1000000000)
+					message.SendText(util.GetString([]string{"sorry_message", lang}))
+					return
+				}
+
+				time.Sleep(1000000000)
+				message.SendText(util.GetString([]string{"chat_gpt_intro", lang}))
+
+				_ = initializeGptSessionInState(message)
+
+				message.ActivateNextScene(GptScene{})
 			case "стоп", "Стоп", "stop", "Stop", "0":
 				time.Sleep(1000000000)
 				message.SendText(util.GetString([]string{"stop_message", lang}) + "" + senderName + "!")
