@@ -3,8 +3,7 @@
 - [Документация на русском](README_RU.md).
 
 An example of a chatbot written in Go using the API service for Whatsapp [green-api.com](https://green-api.com/en/).
-The chatbot clearly demonstrates the use of the API to send text messages, files, pictures, locations, contacts, and integrates OpenAI GPT for intelligent conversations.
-
+The chatbot clearly demonstrates the use of the API to send text messages, files, pictures, locations, contacts.
 
 ## Content
 
@@ -14,8 +13,6 @@ The chatbot clearly demonstrates the use of the API to send text messages, files
 * [Usage](#usage)
 * [Code structure](#code-structure)
 * [Message management](#message-management)
-* [GPT functionality](#gpt-functionality)
-
 
 ## Setting up the environment for running the chatbot
 
@@ -142,7 +139,6 @@ Welcome to GREEN-API chatbot, user! GREEN-API provides the following types of da
 9. Create a group with bot 👥
 10. About GOLANG GREEN API chatbot 🦎
 
-
 To return to the beginning write stop or 0
 ```
 By selecting a number from the list and sending it, the chatbot will answer which API sent this type of message and share a link to information about the API.
@@ -155,7 +151,7 @@ To find out how the method works, follow the link
 https://greenapi.com/en/docs/api/sending/SendMessage/
 ```
 
-If you send something other than numbers 1-14, the chatbot will succinctly answer:
+If you send something other than numbers 1-10, the chatbot will succinctly answer:
 ```
 Sorry, I didn't quite understand you, write a menu to see the possible options
 ```
@@ -163,20 +159,6 @@ The user can also call up the menu by sending a message containing "menu". And b
 ```
 Thank you for using the GREEN-API chatbot, user!
 ```
-
-### GPT Chat Mode
-
-By selecting option 14, you can interact with OpenAI's GPT model:
-
-```
-🤖 You have started a conversation with ChatGPT.
-Ask any questions, and ChatGPT will try to answer them.
-To return to the main menu, type *menu*, *exit*, *stop*, or *back*.
-```
-
-In this mode, your messages will be processed by GPT, and you'll receive intelligent responses. The conversation history is maintained throughout your session, allowing for contextual interactions.
-
-To exit GPT mode and return to the main menu, type any of the exit commands like "menu", "exit", "back", etc.
 
 ## Code structure
 
